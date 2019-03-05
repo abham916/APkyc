@@ -11,8 +11,8 @@ fun main(){
     val sc = Scanner(System.`in`)
     
 	print("Input two integer: ")
-	x = sc.nextInt();
-	y = sc.nextInt();
+	x = sc.nextInt()
+	y = sc.nextInt()
 	if(x > y) println(x)
 	else println(y)
 }

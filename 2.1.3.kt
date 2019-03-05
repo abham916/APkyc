@@ -6,21 +6,27 @@
 import java.util.Scanner
 
 fun main(){
-    var a: Int
+    var a: Int 
 	var b: Int
 	var c: Int
     val sc = Scanner(System.`in`)
     
 	print("Input three integer: ")
-	a = sc.nextInt();
-	b = sc.nextInt();
-	c = sc.nextInt();
-	if(a > b){
+	a = sc.nextInt()
+	b = sc.nextInt()
+	c = sc.nextInt()
+	/*if(a > b){
 		if(a > c) println(a)
 		else println(c)
 	}
 	else{
 		if(b > c) println(b)
 		else println(c)
+	}
+	*/
+	when(a){
+		> b , > c -> print(a)
+		< b , b > c -> print(b)
+		else -> print(c)
 	}
 }
