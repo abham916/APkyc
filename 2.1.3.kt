@@ -6,7 +6,7 @@
 import java.util.Scanner
 
 fun main(){
-    var a: Int 
+    var a: Int
 	var b: Int
 	var c: Int
     val sc = Scanner(System.`in`)
@@ -15,7 +15,8 @@ fun main(){
 	a = sc.nextInt()
 	b = sc.nextInt()
 	c = sc.nextInt()
-	/*if(a > b){
+	/*
+	if(a > b){
 		if(a > c) println(a)
 		else println(c)
 	}
@@ -24,9 +25,9 @@ fun main(){
 		else println(c)
 	}
 	*/
-	when(a){
-		> b , > c -> print(a)
-		< b , b > c -> print(b)
+	when{
+		a > b && a > c -> print(a)
+		b > a && b > c -> print(b)
 		else -> print(c)
 	}
 }
