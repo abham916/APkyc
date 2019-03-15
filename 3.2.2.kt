@@ -5,7 +5,7 @@
 	2) List all of them  
  */
  
- fun main(){
+fun main(){
 	val superheroes = arrayListOf("Superman", "Spider man", "Wonder woman", "Thor", "Black Panther", "Batman", "Cat", "Invisible Woman", "Iron man", "Hulk", "Aquaman")
 	
 	superheroes.add("Ant man")
