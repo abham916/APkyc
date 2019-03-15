@@ -22,7 +22,7 @@
 	println("$choose\t${mapHero[choose]}")
 	
 	choose = "100"
-    for(key in mapHero.keys){
+	for(key in mapHero.keys){
 		val power = (mapHero[key] as List)[0]
 		if(power == choose) println("\nSuperhero who has power $choose is $key")
 	}
