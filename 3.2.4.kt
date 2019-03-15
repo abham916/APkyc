@@ -44,7 +44,6 @@
 	println("--------------------------")
 	for(key in mapHero.keys){
 		val power = (mapHero[key] as List)[0].toInt()
-	
 		if(power > 90) println(key)
 	}
 }
