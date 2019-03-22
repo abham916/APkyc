@@ -8,7 +8,9 @@ CREATE TABLE superheroes(
 CREATE TABLE details(
 	id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
 	age INTEGER,
-	country TEXT	
+	country TEXT,
+	superhero_id INTEGER,
+	FOREIGN KEY(superhero_id) REFERENCES superheroes(id)
 );
 
 INSERT INTO superheroes
