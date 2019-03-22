@@ -29,16 +29,16 @@ VALUES
 	('Aquaman', 75, 'M');
 
 INSERT INTO details
-VALUES (1, 45, 'USA');
-INSERT INTO details (age, country)
+VALUES (1, 45, 'USA', 1);
+INSERT INTO details (age, country, superhero_id)
 VALUES
-	(54, "Mongolia"),
-	(23, "Korea"),
-	(54, "USA"),
-	(80, "Japan"),
-	(23, "USA"),
-	(20, "Mongolia"),
-	(77, "China"),
-	(54, "Korea"),
-	(44, "USA"),
-	(75, "China");
+	(54, "Mongolia", 2),
+	(23, "Korea", 3),
+	(54, "USA", 4),
+	(80, "Japan", 5),
+	(23, "USA", 6),
+	(20, "Mongolia", 7),
+	(77, "China", 8),
+	(54, "Korea", 9),
+	(44, "USA", 10),
+	(75, "China", 11);
