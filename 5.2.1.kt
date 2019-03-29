@@ -24,7 +24,10 @@ open class Grade{
 	}   
 }
 ​
-class CS(val java: Int, val python: Int, val web: Int): Grade(){
+class CS: Grade(){
+	val java: Int = 95
+	val python: Int = 90 
+	val web: Int = 80
 
 	fun max(vararg score: Int): Int{
 		var max: Int
@@ -37,8 +40,10 @@ class CS(val java: Int, val python: Int, val web: Int): Grade(){
 	}
 }
 
-class EE(val listening: Int, val writing: Int, val reading: Int): Grade(){
-	
+class EE: Grade(){
+	val listening: Int = 50
+	val writing: Int = 60 
+	val reading: Int = 80
 	fun min(vararg score: Int): Int{
 		var min: Int
 		
@@ -51,7 +56,7 @@ class EE(val listening: Int, val writing: Int, val reading: Int): Grade(){
 }
 
 fun main(){
-	val cs = CS(10, 20, 30)
+	val cs = CS()
 	val ee = EE()
 	
 	println(cs.max(cs.java, cs.python, cs.web))
