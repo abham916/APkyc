@@ -2,8 +2,10 @@
  * Date: 2019.03.29.
  * Goal: Practice kotlin super class
  */
-​
-open class Grade{
+
+open class Grade(){
+	var score: Int = 0
+ 
 	fun total(vararg score: Int): Int{
 		var sum: Int
 			
@@ -23,27 +25,23 @@ open class Grade{
 		return sum/score.size
 	}   
 }
-​
-class CS: Grade(){
-	val java: Int = 95
-	val python: Int = 90 
-	val web: Int = 80
 
-	fun max(vararg score: Int): Int{
+class CS(val java: Int, val python: Int, val web: Int): Grade(){
+	val arr = arrayOf(java, python, web)
+	
+	fun max(): Int{
 		var max: Int
 		
-		max = score[0]
-		for(i in score){
+		max = arr[0]
+		for(i in arr){
 			if(i > max) max = i
 		}
 		return max
 	}
 }
 
-class EE: Grade(){
-	val listening: Int = 50
-	val writing: Int = 60 
-	val reading: Int = 80
+class EE(val listening: Int, val writing: Int, val reading: Int): Grade(){
+	
 	fun min(vararg score: Int): Int{
 		var min: Int
 		
@@ -56,9 +54,10 @@ class EE: Grade(){
 }
 
 fun main(){
-	val cs = CS()
-	val ee = EE()
+	var cs = CS(10, 20, 30)
+	var ee = EE(10, 20, 30)
 	
-	println(cs.max(cs.java, cs.python, cs.web))
+	println(cs.max())
+	println(ee.total(ee.listening, ee.writing, ee.reading))
 
 }
