@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lesson 7_1</string>
+    <string name="java">Java</string>
+    <string name="network">Network</string>
+    <string name="database">Database</string>
+    <string name="total">Total</string>
+    <string name="total_sum">Total sum</string>
+    <string name="ave">Ave</string>
+    <string name="change">Change</string>
+    <string name="grade">Grade</string>
+    <string name="submit">Submit</string>
+</resources>
