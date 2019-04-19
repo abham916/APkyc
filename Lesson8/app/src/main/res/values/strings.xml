@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lesson 8</string>
+    <string name="You_are_now_in_Activity_2">You are now in Activity 2</string>
+    <string name="Go_back_to_Main">Go back to Main</string>
+    <string name="Frame_Layout_1">Frame Layout 1</string>
+    <string name="Activity_2">Activity 2</string>
+    <string name="Fragment_A">Fragment A</string>
+    <string name="Fragment_B">Fragment B</string>
+    <string name="It_s_Fragment_A">It\'s Fragment A</string>
+    <string name="It_s_Fragment_B">It\'s Fragment B</string>
+</resources>
