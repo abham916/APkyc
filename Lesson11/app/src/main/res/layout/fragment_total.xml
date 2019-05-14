@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TotalFragment">
+
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline"
+                                          android:orientation="vertical" app:layout_constraintGuide_percent="0.08"/>
+    <TextView
+            android:text="@string/java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editTextJava" android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"/>
+    <TextView
+            android:text="@string/network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editTextNet" android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"/>
+    <TextView
+            android:text="@string/database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editTextDB" android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextJava"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" app:layout_constraintBottom_toTopOf="@+id/editTextNet"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextNet"
+            app:layout_constraintTop_toBottomOf="@+id/editTextJava"
+            app:layout_constraintBottom_toTopOf="@+id/editTextDB" app:layout_constraintEnd_toStartOf="@+id/guideline2"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextDB"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNet"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4" app:layout_constraintEnd_toStartOf="@+id/guideline2"/>
+    <Button
+            android:text="@string/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnTotal" app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" android:layout_marginTop="8dp"/>
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline2"
+            app:layout_constraintGuide_percent="0.92"/>
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline3" app:layout_constraintGuide_percent="0.3"/>
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline4" app:layout_constraintGuide_percent="0.6"/>
+</android.support.constraint.ConstraintLayout>
