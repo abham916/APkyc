@@ -76,6 +76,7 @@ class TotalFragment : Fragment() {
                 else -> editTextDB.text.toString().toInt()
             }
 
+            activity!!.nav_view.selectedItemId = R.id.navigation_result
 
             total = java + network + database
             fragmentManager!!
